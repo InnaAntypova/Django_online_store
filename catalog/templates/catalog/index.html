@@ -2,9 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOMINION Store</title>
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Test text</h1>
+<nav class="navbar navbar-expand-lg  shadow-sm p-3 mb-5 bg-blue rounded" style="background-color: #d3e7f2">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home/"><h5 class="my-0 mr-md-auto font-weight-normal">DOMINION Store</h5></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active mb-0 h1 " aria-current="page" href="/home/">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active mb-0 h1" href="/contacts/">Контакты</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <p class="lead fs-1">ХИТЫ ПРОДАЖ</p>
+
+    <div class="container">
+    <div class="row text-center">
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Light</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">599 руб.</h1>
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                        <li>- Ежемесячное обновление</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Medium</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">1499 руб.</h1>
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                        <li>- Поддержка</li>
+                        <li>- Ежемесячное обновление</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">TOP</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">2599 руб.</h1>
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                        <li>- Поддержка</li>
+                        <li>- Установка на сервер</li>
+                        <li>- Ежемесячное обновление</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
