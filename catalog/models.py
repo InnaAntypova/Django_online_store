@@ -22,5 +22,13 @@ class Product(models.Model):
 
 
 class Category(models.Model):
+    """ Модель для описания категории товара """
     name = models.CharField(max_length=50, verbose_name='Наименование')
-    description = models.TextField(verbose_name='Описание')
+    description = models.TextField(verbose_name='Описание', **NULLABLE)
+
+    def __str__(self):
+        return f'{self.name}'
+
+    class Meta:
+        verbose_name = 'категория'
+        verbose_name_plural = 'категории'
