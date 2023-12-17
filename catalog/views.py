@@ -1,8 +1,13 @@
 from django.shortcuts import render
 
+from catalog.models import Category, Product
+
 
 def index(request):
-    return render(request, 'catalog/index.html')
+    context = {
+        'object_list': Product.objects.all().order_by('?')[:3],
+    }
+    return render(request, 'catalog/index.html', context)
 
 
 def contacts(request):
@@ -15,3 +20,15 @@ def contacts(request):
     return render(request, 'catalog/contacts.html')
 
 
+def category(request):
+    context = {
+        'object_list': Category.objects.all(),
+    }
+    return render(request, 'catalog/category.html', context)
+
+
+def products(request, pk):
+    context = {
+        'object_list': Product.objects.filter(category_id=pk),
+    }
+    return render(request, 'catalog/products.html', context)
