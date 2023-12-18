@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">{{ object.price_item }}<small
                                     class="text-body-secondary fw-light"> руб.</small></h1>
-                            <img src="{{ object.image| my_media}}" alt=" " />
+                            <img src="{{ object.image| my_media}}" width="35%" height="35%" alt=" " />
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>{{ object.description | truncatechars:40 | title}}</li>
                             </ul>

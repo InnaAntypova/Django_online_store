@@ -32,3 +32,21 @@ def products(request, pk):
         'object_list': Product.objects.filter(category_id=pk),
     }
     return render(request, 'catalog/products.html', context)
+
+
+def save_product(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        category_id = request.POST.get('category')
+        image = request.POST.get('image')
+        price_item = request.POST.get('price_item')
+        description = request.POST.get('description')
+
+        product = {'name': name,
+                   'description': description,
+                   'category_id': category_id,
+                   'price_item': price_item,
+                   'image': image}
+        Product.objects.all().create(**product)
+
+    return render(request, 'catalog/save_product.html')

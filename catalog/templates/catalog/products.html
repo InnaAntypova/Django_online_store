@@ -1,23 +1,26 @@
 {% extends 'catalog/base.html' %}
+{% load my_tags %}
 
 {% block content %}
     <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
         {% for object in object_list %}
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">{{ object.name }}</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">{{ object.price_item }}<small
-                                    class="text-body-secondary fw-light"> руб.</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>{{ object.description }}</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
-                        </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">{{ object.name }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">{{ object.price_item }}<small
+                                class="text-body-secondary fw-light"> руб.</small></h1>
+                        <img src="{{ object.image| my_media }}" width="35%" height="35%" alt=" "/>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>{{ object.description }}</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
                     </div>
                 </div>
+            </div>
         {% endfor %}
     </div>
+
 {% endblock %}

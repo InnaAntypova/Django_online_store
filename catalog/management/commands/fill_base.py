@@ -42,23 +42,27 @@ class Command(BaseCommand):
              'description': 'Серверная платформа SYS-6029P-WTR предназначена для монтирования в стойку формата 2U. '
                             'Поддерживает линейку процессоров Intel Xeon Scalable.',
              'category_id': 3,
-             'price_item': 223820},
+             'price_item': 223820,
+             'image': '/img/1003010.jpg'},
             {'name': 'Серверная платформа SuperMicro SYS-5019P-WTR',
              'description': 'Серверная платформа SYS-5019P-WTR для монтажа в стойку высотой 1U. '
                             'В ее основе находится материнская плата Super X11SPW-TF. '
                             'Используется в малых и средних офисах.',
              'category_id': 3,
-             'price_item': 219810},
+             'price_item': 219810,
+             'image': '/img/1003002.jpg'},
             {'name': 'Блок питания HP 865408-B21 500W Flex',
              'description': 'блок питания мощностью 500Вт, Hot-Plug, энегоэффективность: 96%, '
                             'входное напряжение: 200 - 277V AC, 380V DC, для HPE ProLiant Gen10 и 300 серии Gen9, '
                             '680x40x225мм',
              'category_id': 3,
-             'price_item': 15140},
+             'price_item': 15140,
+             'image': '/img/998539.jpg'},
             {'name': 'Жесткий диск 600Gb SAS Seagate Cheetah 15K.7',
              'description': '600 Гб, SAS, форм фактор 3.5", 15000 об/мин, 16 Мб',
              'category_id': 3,
-             'price_item': 28020},
+             'price_item': 28020,
+             'image': '/img/943251.jpg'},
             {'name': 'Вентилятор SuperMicro FAN-0065L4',
              'description': 'вентилятор для серверных корпусов, 40x40 мм, 13000 об/мин, PWM, 4-pin',
              'category_id': 3,
