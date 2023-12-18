@@ -62,7 +62,8 @@ class Command(BaseCommand):
             {'name': 'Вентилятор SuperMicro FAN-0065L4',
              'description': 'вентилятор для серверных корпусов, 40x40 мм, 13000 об/мин, PWM, 4-pin',
              'category_id': 3,
-             'price_item': 5570}
+             'price_item': 5570,
+             'image': '/img/940009.jpg'}
         ]
 
         fill_products = []
