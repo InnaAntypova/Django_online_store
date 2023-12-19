@@ -34,6 +34,13 @@ def products(request, pk):
     return render(request, 'catalog/products.html', context)
 
 
+def product_detail(request, pk):
+    context = {
+        'object_list': Product.objects.filter(id=pk),
+    }
+    return render(request, 'catalog/product_detail.html', context)
+
+
 def save_product(request):
     if request.method == 'POST':
         name = request.POST.get('name')
