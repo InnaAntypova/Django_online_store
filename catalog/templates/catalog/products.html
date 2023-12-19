@@ -7,16 +7,17 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">{{ object.name }}</h4>
+                        <h4 class="my-0 fw-normal">{{ object.name | truncatechars:30 }}</h4>
                     </div>
                     <div class="card-body">
                         <h1 class="card-title pricing-card-title">{{ object.price_item }}<small
                                 class="text-body-secondary fw-light"> руб.</small></h1>
                         <img src="{{ object.image| my_media }}" width="35%" height="35%" alt=" "/>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>{{ object.description }}</li>
+                            <li>{{ object.description | truncatechars:40 | title}}</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                        <a href="{% url 'catalog:product_detail' object.pk %}"
+                           type="button" class="w-100 btn btn-lg btn-outline-primary">Подробнее</a>
                     </div>
                 </div>
             </div>

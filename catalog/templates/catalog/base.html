@@ -99,9 +99,12 @@
                 <span class="fs-4"><strong>DOMINION Store</strong></span>
             </a>
             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                <a class="py-2 link-body-emphasis text-decoration-none" href="/category/">Каталог</a>
+                <a class="py-2 link-body-emphasis text-decoration-none" href="{% url 'catalog:category' %}">Каталог</a>
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"></a>
-                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/contacts/">Контакты</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'catalog:contacts' %}">Контакты</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"></a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none"
+                   href="{% url 'catalog:save_product' %}">Личный кабинет</a>
             </nav>
         </div>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">

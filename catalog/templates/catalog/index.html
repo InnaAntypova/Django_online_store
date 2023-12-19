@@ -17,7 +17,8 @@
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>{{ object.description | truncatechars:40 | title}}</li>
                             </ul>
-{#                            <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="/products/">Подробнее</a>#}
+                            <a type="button" class="w-100 btn btn-lg btn-outline-primary"
+                               href="{% url 'catalog:product_detail' object.pk %}">Подробнее</a>
                         </div>
                     </div>
                 </div>
