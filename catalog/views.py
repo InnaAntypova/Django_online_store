@@ -1,59 +1,54 @@
-from django.shortcuts import render
+from urllib import request
+
+from django.urls import reverse_lazy, reverse
+from django.views.generic import TemplateView, ListView, DetailView, CreateView
 
 from catalog.models import Category, Product
 
 
-def index(request):
-    context = {
-        'object_list': Product.objects.all().order_by('?')[:3],
-    }
-    return render(request, 'catalog/index.html', context)
+class IndexView(TemplateView):
+    template_name = 'catalog/index.html'
+
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        context_data['object_list'] = Product.objects.all().order_by('?')[:3]
+        return context_data
 
 
-def contacts(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
-        print(f'Пришло сообщение:\nИмя: {name}\nТел.: {phone}\nEmail: {email}\nСообщение: {message}')
-    return render(request, 'catalog/contacts.html')
+class ContactsView(TemplateView):
+    template_name = 'catalog/contacts.html'
+
+    def get_context_data(self, **kwargs):
+        if self.request.method == 'POST':
+            name = self.request.POST. get('name')
+            phone = self.request.POST.get('phone')
+            email = self.request.POST.get('email')
+            message = self.request.POST.get('message')
+            print(f'Пришло сообщение:\nИмя: {name}\nТел.: {phone}\nEmail: {email}\nСообщение: {message}')
+        return super().get_context_data(**kwargs)
 
 
-def category(request):
-    context = {
-        'object_list': Category.objects.all(),
-    }
-    return render(request, 'catalog/category.html', context)
+class CategoryListView(ListView):
+    model = Category
 
 
-def products(request, pk):
-    context = {
-        'object_list': Product.objects.filter(category_id=pk),
-    }
-    return render(request, 'catalog/products.html', context)
+class ProductsListView(ListView):
+    model = Product
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(category_id=self.kwargs.get('pk'))
+        return queryset
 
 
-def product_detail(request, pk):
-    context = {
-        'object_list': Product.objects.filter(id=pk),
-    }
-    return render(request, 'catalog/product_detail.html', context)
+class ProductDetailView(DetailView):
+    model = Product
 
 
-def save_product(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        category_id = request.POST.get('category')
-        image = request.POST.get('image')
-        price_item = request.POST.get('price_item')
-        description = request.POST.get('description')
+class ProductCreateView(CreateView):
+    model = Product
 
-        product = {'name': name,
-                   'description': description,
-                   'category_id': category_id,
-                   'price_item': price_item,
-                   'image': image}
-        Product.objects.all().create(**product)
+    fields = ('name', 'category', 'image', 'price_item', 'description')
 
-    return render(request, 'catalog/save_product.html')
+    def get_success_url(self):
+        return reverse('catalog:products', args=[self.object.category.pk])
