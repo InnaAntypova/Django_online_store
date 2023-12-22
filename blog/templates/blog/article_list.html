@@ -1,0 +1,25 @@
+{% extends 'catalog/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+    <div class="d-grid gap-2 d-md-flex mb-4 justify-content-md-end">
+    <a href="{% url 'blog:create_article' %}" class="btn btn-primary ">Создать статью</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+        <div class="col-md-6">
+            {% for object in object_list %}
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5>{{ object.title }}</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">{{ object.body | truncatechars:75 }}</p>
+                            <a href="{% url 'blog:article_detail' object.pk %}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
