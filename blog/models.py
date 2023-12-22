@@ -4,6 +4,7 @@ NULLABLE = {'null': True, 'blank': True}
 
 
 class Article(models.Model):
+    """ Модель для информационной статьи в блоге """
     title = models.CharField(max_length=100, verbose_name='Заголовок')
     slug = models.CharField(max_length=150, verbose_name='Slug')
     body = models.TextField(verbose_name='Содержимое')
