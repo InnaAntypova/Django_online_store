@@ -10,6 +10,7 @@
                     <div class="card-header">
                         <h5>{{ object.title }}</h5>
                     </div>
+                    <img src="{{ object.image| my_media }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">{{ object.body }}</p>
                     </div>
@@ -20,6 +21,7 @@
                            class="btn btn-outline-danger">Удалить</a>
                     </div>
                 </div>
+                <h6>Кол-во просмотров: {{ object.count_views }}</h6>
             </div>
         </div>
     </div>
