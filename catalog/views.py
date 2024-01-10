@@ -1,8 +1,10 @@
 from urllib import request
 
+from django.forms import inlineformset_factory
 from django.urls import reverse_lazy, reverse
 from django.views.generic import TemplateView, ListView, DetailView, CreateView
 
+from catalog.forms import ProductForm
 from catalog.models import Category, Product
 
 
@@ -47,8 +49,11 @@ class ProductDetailView(DetailView):
 
 class ProductCreateView(CreateView):
     model = Product
-
-    fields = ('name', 'category', 'image', 'price_item', 'description')
+    form_class = ProductForm
 
     def get_success_url(self):
         return reverse('catalog:products', args=[self.object.category.pk])
+
+    # def get_context_data(self, **kwargs):
+    #     context_data = super().get_context_data(**kwargs)
+    #     SubjectFormset = inlineformset_factory(Product, Subject, )
