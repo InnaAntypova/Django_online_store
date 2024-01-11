@@ -110,15 +110,42 @@
     </header>
 
     <main>
-        <form method="post">
-            {% csrf_token %}
-            <div class="row-cols-2 align-items-center">
-                <div class="container-fluid ">
-                    {{ form.as_p }}
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+        <div class="col-12">
+            <form class="row" method="post" enctype="multipart/form-data">
+                <div class="col-6">
+                    <div class="card">
+                        <h5 class="card-header">Товар</h5>
+                        <div class="card-body">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit" class="btn btn-primary">
+                                {% if object %}
+                                    Изменить
+                                {% else %}
+                                    Сохранить
+                                {% endif %}
+                            </button>
+                            <a href="{% url 'catalog:category' %}" type="button" class="btn btn-danger">Отмена</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </form>
+                <div class="col-6">
+                    <div class="card">
+                        <h5 class="card-header">Версия</h5>
+                        <div class="card-body">
+                            {{ formset.management_form }}
+                            {% for form in formset.forms %}
+                                {{ form.as_p }}
+                                {% if not forloop.last %}
+                                <hr>
+                                {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
