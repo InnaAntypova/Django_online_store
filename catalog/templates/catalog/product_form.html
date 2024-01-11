@@ -128,7 +128,7 @@
                                     Сохранить
                                 {% endif %}
                             </button>
-                            <a href="{% url 'catalog:product_detail' object.pk %}" type="button" class="btn btn-danger">Отмена</a>
+                            <a href="{% url 'catalog:category' %}" type="button" class="btn btn-danger">Отмена</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                             {% for form in formset.forms %}
                                 {{ form | crispy }}
                                 {% if not forloop.last %}
-                                    <hr>
+                                <hr>
                                 {% endif %}
                             {% endfor %}
                         </div>
