@@ -1,4 +1,7 @@
+{% load crispy_forms_filters %}
 {% load static %}
+{% load crispy_forms_tags %}
+{% crispy form %}
 
 <!doctype html>
 <html lang="ru" data-bs-theme="auto">
@@ -117,7 +120,7 @@
                         <h5 class="card-header">Товар</h5>
                         <div class="card-body">
                             {% csrf_token %}
-                            {{ form.as_p }}
+                            {{ form | crispy }}
                             <button type="submit" class="btn btn-primary">
                                 {% if object %}
                                     Изменить
@@ -125,7 +128,7 @@
                                     Сохранить
                                 {% endif %}
                             </button>
-                            <a href="{% url 'catalog:category' %}" type="button" class="btn btn-danger">Отмена</a>
+                            <a href="{% url 'catalog:product_detail' object.pk %}" type="button" class="btn btn-danger">Отмена</a>
                         </div>
                     </div>
                 </div>
@@ -135,12 +138,11 @@
                         <div class="card-body">
                             {{ formset.management_form }}
                             {% for form in formset.forms %}
-                                {{ form.as_p }}
+                                {{ form | crispy }}
                                 {% if not forloop.last %}
-                                <hr>
+                                    <hr>
                                 {% endif %}
                             {% endfor %}
-
                         </div>
                     </div>
                 </div>
