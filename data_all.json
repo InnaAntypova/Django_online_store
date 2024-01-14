@@ -1,0 +1,1305 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-12-13T17:56:37.860Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Подписка",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-12-13T17:57:32.867Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Другое",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-12-13T17:58:17.895Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Light (Подписка, 599, 2023-12-13 17:58:17.887956+00:00/2023-12-13 17:58:17.887956+00:00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-12-13T17:58:49.208Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-13 17:58:49.208487+00:00/2023-12-13 17:58:49.208487+00:00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-12-13T17:59:18.482Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-13 17:59:18.478068+00:00/2023-12-13 17:59:18.478068+00:00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-12-13T18:01:26.758Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Start Server (Другое, 14999, 2023-12-13 18:01:26.758389+00:00/2023-12-13 18:01:26.758389+00:00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-12-13T18:02:35.403Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Start Server (Другое, 14999, 2023-12-13 18:01:26.758389+00:00/2023-12-13 18:01:26.758389+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-12-13T18:02:35.491Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-13 17:59:18.478068+00:00/2023-12-13 17:59:18.478068+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-12-13T18:02:35.494Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-13 17:58:49.208487+00:00/2023-12-13 17:58:49.208487+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-12-13T18:02:35.497Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Light (Подписка, 599, 2023-12-13 17:58:17.887956+00:00/2023-12-13 17:58:17.887956+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-12-13T18:02:41.975Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Другое",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-12-13T18:02:41.982Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Подписка",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-12-13T21:23:08.105Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Подписка",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-12-14T12:49:20.029Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Fix soft (Другое, 4599, 2023-12-13 21:44:04.363552+00:00/2023-12-13 21:44:04.363552+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-12-14T12:49:20.035Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-13 21:40:01.501019+00:00/2023-12-13 21:40:01.501019+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-12-14T12:49:20.036Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-13 21:37:59.323189+00:00/2023-12-13 21:37:59.323189+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-12-14T12:49:20.036Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Light (Подписка, 599, 2023-12-13 21:33:22.460644+00:00/2023-12-13 21:33:22.460644+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-12-14T12:58:55.966Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Fix soft (Другое, 4599, 2023-12-14 12:54:03.702191+00:00/2023-12-14 12:54:03.702191+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-12-14T12:58:55.966Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-14 12:54:03.702191+00:00/2023-12-14 12:54:03.702191+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-12-14T12:58:55.966Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-14 12:54:03.702191+00:00/2023-12-14 12:54:03.702191+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-12-14T12:58:55.976Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Light (Подписка, 599, 2023-12-14 12:54:03.702191+00:00/2023-12-14 12:54:03.702191+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2023-12-14T13:02:32.090Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Fix soft (Другое, 4599, 2023-12-14 12:58:59.408010+00:00/2023-12-14 12:58:59.408010+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2023-12-14T13:02:32.090Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-14 12:58:59.408010+00:00/2023-12-14 12:58:59.408010+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2023-12-14T13:02:32.090Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-14 12:58:59.408010+00:00/2023-12-14 12:58:59.408010+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2023-12-14T13:02:32.090Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Light (Подписка, 599, 2023-12-14 12:58:59.408010+00:00/2023-12-14 12:58:59.408010+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2023-12-14T13:03:18.894Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Fix soft (Другое, 4599, 2023-12-14 13:02:43.830649+00:00/2023-12-14 13:02:43.830649+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2023-12-14T13:03:18.894Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-14 13:02:43.830649+00:00/2023-12-14 13:02:43.830649+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2023-12-14T13:03:18.902Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-14 13:02:43.830649+00:00/2023-12-14 13:02:43.830649+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2023-12-14T13:03:18.902Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Light (Подписка, 599, 2023-12-14 13:02:43.830649+00:00/2023-12-14 13:02:43.830649+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2023-12-14T13:53:31.490Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Fix soft (Другое, 4599, 2023-12-14 13:03:30.822299+00:00/2023-12-14 13:03:30.822299+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2023-12-14T13:53:31.493Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "TOP (Подписка, 2599, 2023-12-14 13:03:30.822299+00:00/2023-12-14 13:03:30.822299+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2023-12-14T13:53:31.494Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "Medium (Подписка, 1499, 2023-12-14 13:03:30.822299+00:00/2023-12-14 13:03:30.822299+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2023-12-14T13:53:31.495Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Light (Подписка, 599, 2023-12-14 13:03:30.822299+00:00/2023-12-14 13:03:30.822299+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-12-14T13:53:36.798Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Другое",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-12-14T13:53:36.798Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Подписка",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-12-24T03:38:52.702Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "12",
+      "object_repr": "dgdfgdfg(True, 7)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-12-24T03:38:52.711Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "sssdf(True, 5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-12-24T03:38:52.712Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "dsfd(True, 5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-12-24T03:38:52.713Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "test(False, 3)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-12-24T04:14:56.507Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "21",
+      "object_repr": "ааппртрр(True, 0)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-12-24T04:14:56.507Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "20",
+      "object_repr": "статья для теста(True, 1)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-12-24T04:14:56.507Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "19",
+      "object_repr": "hjh(True, 0)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-12-24T04:14:56.507Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "18",
+      "object_repr": "testing(True, 1)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2024-01-10T14:59:59.480Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Привод внешний ASUS SDRW-08U8M-U (Серверное оборудование, 4060, 2024-01-10 14:17:02.735189+00:00/2024-01-10 14:17:02.735189+00:00) (1/True)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2024-01-10T17:24:33.820Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Серверный процессор AMD EPYC 7742 OEM (Серверное оборудование, 180730, 2024-01-10 17:16:25.497838+00:00/2024-01-10 17:16:25.497838+00:00)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add продукт",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change продукт",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete продукт",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view продукт",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Статья",
+      "content_type": 9,
+      "codename": "add_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Статья",
+      "content_type": 9,
+      "codename": "change_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Статья",
+      "content_type": 9,
+      "codename": "delete_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Статья",
+      "content_type": 9,
+      "codename": "view_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add версия",
+      "content_type": 10,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change версия",
+      "content_type": 10,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete версия",
+      "content_type": 10,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view версия",
+      "content_type": 10,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$YLpMwTKL9saCW4tUmpqXqB$86+QLhGaTJwyKb2z/5JA1l/mTMQDkRXzUK2+SEhpRaA=",
+      "last_login": "2024-01-10T14:39:49.700Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-12-13T17:52:19.468Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "blog",
+      "model": "article"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0m3m0zvtubnw3hzoxxjme7fcz81e2m1i",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8ZACX7vsNhIFBqgaS0q6M_65NutDtPefcFwtxW2vYBi1hzuzCJDv9bhjTg9oO8j22W-ept3WZke8KP-jgU8_0vB7u30GNo37rRLkgkoZCyXgPUhtTlBIi--R9kVor4aCAg3hG68ChlrEQgjPWC2PZ-wP0qjeU:1rGdW6:yLySFzhJVPVBHIqFXMPTaezPEG809qDpGLMC-UMmCkQ",
+      "expire_date": "2024-01-05T11:16:34.501Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "edk1smnhgrjuz5v90k4gxqx3vemsvfbx",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8ZACX7vsNhIFBqgaS0q6M_65NutDtPefcFwtxW2vYBi1hzuzCJDv9bhjTg9oO8j22W-ept3WZke8KP-jgU8_0vB7u30GNo37rRLkgkoZCyXgPUhtTlBIi--R9kVor4aCAg3hG68ChlrEQgjPWC2PZ-wP0qjeU:1rDTPk:Yo1LQGCCbd7MR-49azBisLmsOc4dX4ZObz5K4FP-Izo",
+      "expire_date": "2023-12-27T17:52:56.601Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "wfqo2brlkvk1heuc3icviry19oj64392",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8ZACX7vsNhIFBqgaS0q6M_65NutDtPefcFwtxW2vYBi1hzuzCJDv9bhjTg9oO8j22W-ept3WZke8KP-jgU8_0vB7u30GNo37rRLkgkoZCyXgPUhtTlBIi--R9kVor4aCAg3hG68ChlrEQgjPWC2PZ-wP0qjeU:1rNZkD:Syx-ygWg636Q57Mmk1-GU3Bbr81sVaTjPzr4fSzYgcU",
+      "expire_date": "2024-01-24T14:39:49.716Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Подписка",
+      "description": "Регулярное обновление и сопровождение ПО согласно тарифа"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Другое",
+      "description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Серверное оборудование",
+      "description": "Серверы и серверное оборудование"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Light",
+      "description": "- Ежемесячное обновление",
+      "image": "",
+      "category": 1,
+      "price_item": 599,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Medium",
+      "description": "- Поддержка \n- Ежемесячное обновление",
+      "image": "",
+      "category": 1,
+      "price_item": 1499,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "TOP",
+      "description": "- Поддержка \n- Установка на сервер\n- Ежемесячное обновление",
+      "image": "",
+      "category": 1,
+      "price_item": 2599,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Fix soft",
+      "description": "Восстановление ПО без подписки",
+      "image": "",
+      "category": 2,
+      "price_item": 4599,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Серверная платформа Supermicro SYS-6029P-WTR",
+      "description": "Серверная платформа SYS-6029P-WTR предназначена для монтирования в стойку формата 2U. Поддерживает линейку процессоров Intel Xeon Scalable.",
+      "image": "/catalog/1003010.jpg",
+      "category": 3,
+      "price_item": 223820,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Серверная платформа SuperMicro SYS-5019P-WTR",
+      "description": "Серверная платформа SYS-5019P-WTR для монтажа в стойку высотой 1U. В ее основе находится материнская плата Super X11SPW-TF. Используется в малых и средних офисах.",
+      "image": "/catalog/1003002.jpg",
+      "category": 3,
+      "price_item": 219810,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Блок питания HP 865408-B21 500W Flex",
+      "description": "блок питания мощностью 500Вт, Hot-Plug, энегоэффективность: 96%, входное напряжение: 200 - 277V AC, 380V DC, для HPE ProLiant Gen10 и 300 серии Gen9, 680x40x225мм",
+      "image": "/catalog/998539.jpg",
+      "category": 3,
+      "price_item": 15140,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "Жесткий диск 600Gb SAS Seagate Cheetah 15K.7",
+      "description": "600 Гб, SAS, форм фактор 3.5\", 15000 об/мин, 16 Мб",
+      "image": "/catalog/943251.jpg",
+      "category": 3,
+      "price_item": 28020,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "Вентилятор SuperMicro FAN-0065L4",
+      "description": "вентилятор для серверных корпусов, 40x40 мм, 13000 об/мин, PWM, 4-pin",
+      "image": "/catalog/940009.jpg",
+      "category": 3,
+      "price_item": 5570,
+      "date_make": "2023-12-24T05:00:18.512Z",
+      "date_change": "2023-12-24T05:00:18.512Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "Привод внешний ASUS SDRW-08U8M-U",
+      "description": "DVD-RW DL, внешний, USB-C, скорость записи CD: 24x, DVD: 8x, серебристый",
+      "image": "",
+      "category": 3,
+      "price_item": 4060,
+      "date_make": "2024-01-10T14:17:02.735Z",
+      "date_change": "2024-01-12T12:25:27.245Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name": "Серверный процессор AMD EPYC 7742 OEM",
+      "description": "Socket SP3, 64-ядерный, 2250 МГц, Rome, Кэш L2 - 32 Мб, Кэш L3 - 256 Мб, 7 нм, 225 Вт",
+      "image": "",
+      "category": 3,
+      "price_item": 180760,
+      "date_make": "2024-01-10T17:25:12.443Z",
+      "date_change": "2024-01-10T17:30:38.571Z"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product_name": 10,
+      "version_number": "1",
+      "version_name": "start",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product_name": 10,
+      "version_number": "2",
+      "version_name": "next",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product_name": 10,
+      "version_number": "3.01",
+      "version_name": "Testing",
+      "is_active": true
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 1,
+    "fields": {
+      "title": "Сервер – суть понятия.",
+      "slug": "",
+      "body": "Сервер (от англ. to serve — служить) — программно-аппаратный компонент вычислительной системы, который выполняет сервисные функции в ответ на запросы клиента, предоставляя ему открытый доступ к определённым ресурсам. Основой задачей сервера является исполнение запросов клиентов или программ. Сервер – сугубо утилитарная вещь, которая предназначена для выполнения конкретных задач. Главным свойством сервера является выполнение или решение той или иной задачи. Именно поэтому мы советуем сначала определить задачу, под которую впоследствии будет подобран определенный сервер.",
+      "image": "/blog/1234.jpg",
+      "create_date": "2023-12-24T05:00:20.624Z",
+      "is_published": true,
+      "count_views": 17
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 2,
+    "fields": {
+      "title": "Сбалансированный сервер.",
+      "slug": "",
+      "body": "Сбалансированный сервер – это оптимальное сочетание производительности, качества и цены, к которому стремятся Заказчик и Продавец. Подбор такого сочетания – наша общая задача. Задача подбора оптимального сервера нетривиальна. Мы учитываем множество факторов, о которых даже не подозревает заказчик. Зачастую заказчик неадекватно оценивает масштаб задач или требует сервер по определенной спецификации, а не по задачам, которые будут на него возложены. Именно поэтому подбор сервера, как и само его производство, является задачей профессионалов. Наши специалисты ежедневно сталкиваются с самыми разнообразными задачами, накапливают и систематизируют многолетний опыт в этой области.",
+      "image": "/blog/12345.jpeg",
+      "create_date": "2023-12-24T05:00:20.624Z",
+      "is_published": true,
+      "count_views": 1
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 3,
+    "fields": {
+      "title": "Что такое RAID?",
+      "slug": "",
+      "body": "Изначально аббревиатура RAID означала \"резервный, избыточный массив недорогих дисков\" (Redundant Arrays of Inexpensive Disks), потому как они были намного дешевле оперативной памяти. Именно в таком ключе RAID был представлен исследователями (Петтерсон, Гибсон, Катц) в 1987 году. Спустя некоторое время расшифровка изменилась, определив RAID как \"резервный (избыточный) массив независимых дисков\", т. е. «Redundant Array of Independent Disks»,ведь теперь для массивов использовали и дорогое оборудование (недорогими дисками считались диски для ПЭВМ). Итак, RAID служит нам для повышения уровня надежности хранения информации, для увеличения скорости чтения, а также записи данных.",
+      "image": "/blog/12.jpg",
+      "create_date": "2023-12-24T05:00:20.624Z",
+      "is_published": true,
+      "count_views": 1
+    }
+  }
+]
