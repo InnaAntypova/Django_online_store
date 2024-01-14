@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     'catalog',
     'blog',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,6 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_SSL = True
 SERVER_EMAIL = EMAIL_HOST_USER
+
+
+AUTH_USER_MODEL = 'users.User'
