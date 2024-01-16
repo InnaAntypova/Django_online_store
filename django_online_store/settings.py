@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     'catalog',
     'blog',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -147,12 +147,16 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap5',)
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = ''
+EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'allatiel@list.ru'
+EMAIL_HOST_PASSWORD = 'FrPKpGK0TFFwb7hLB0fP'
 EMAIL_USE_SSL = True
 SERVER_EMAIL = EMAIL_HOST_USER
 
+DEFAULT_FROM_EMAIL = SERVER_EMAIL
 
 AUTH_USER_MODEL = 'users.User'
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/home'
+
