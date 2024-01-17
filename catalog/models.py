@@ -1,5 +1,6 @@
 from django.db import models
 
+from django_online_store import settings
 from users.models import User
 
 NULLABLE = {'null': True, 'blank': True}
@@ -28,7 +29,7 @@ class Product(models.Model):
     date_make = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     date_change = models.DateTimeField(auto_now=True, verbose_name='Дата последнего изменения')
 
-    user_create = models.ForeignKey(User, on_delete=models.SET_NULL, **NULLABLE)
+    user_create = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE)
 
     def __str__(self):
         return f'{self.name} ({self.category}, {self.price_item}, {self.date_make}/{self.date_change})'

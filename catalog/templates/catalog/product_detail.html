@@ -24,8 +24,10 @@
                             {% endif %}
                     </ul>
                     <a href="#" type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</a>
-                    <a href="{% url 'catalog:update_product' object.pk %} " type="button"
-                       class="w-100 btn btn-lg btn-outline-danger">Изменить</a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'catalog:update_product' object.pk %} " type="button"
+                           class="w-100 btn btn-lg btn-outline-danger">Изменить</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
