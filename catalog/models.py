@@ -31,10 +31,17 @@ class Product(models.Model):
 
     user_create = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE)
 
+    is_published = models.BooleanField(default=False, verbose_name='Признак публикации')
+
     def __str__(self):
         return f'{self.name} ({self.category}, {self.price_item}, {self.date_make}/{self.date_change})'
 
     class Meta:
+        permissions = [(
+            'set_published',
+            'Может публиковать продукт'
+        )]
+
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
 
