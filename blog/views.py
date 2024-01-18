@@ -1,3 +1,5 @@
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+
 from django_online_store import settings
 from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
@@ -44,9 +46,10 @@ class ArticleDetailView(DetailView):
         )
 
 
-class ArticleCreateView(CreateView):
+class ArticleCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Article
-
+    permission_required = 'blog.add_article'
+    permission_denied_message = 'Доступ запрещен.'
     fields = ('title', 'body', 'image')
     success_url = reverse_lazy('blog:article_list')
 
@@ -58,9 +61,10 @@ class ArticleCreateView(CreateView):
         return super().form_valid(form)
 
 
-class ArticleUpdateView(UpdateView):
+class ArticleUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Article
-
+    permission_required = 'blog.change_article'
+    permission_denied_message = 'Доступ запрещен.'
     fields = ('title', 'body', 'image', 'is_published')
 
     def form_valid(self, form):
@@ -74,8 +78,9 @@ class ArticleUpdateView(UpdateView):
         return reverse('blog:article_detail', args=[self.kwargs.get('pk')])
 
 
-class ArticleDeleteView(DeleteView):
+class ArticleDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Article
-
+    permission_required = 'blog.delete_article'
+    permission_denied_message = 'Доступ запрещен.'
     success_url = reverse_lazy('blog:article_list')
 
