@@ -1,6 +1,8 @@
 from urllib import request
 
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.forms import inlineformset_factory
+from django.http import Http404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
 
@@ -34,7 +36,7 @@ class CategoryListView(ListView):
     model = Category
 
 
-class ProductsListView(ListView):
+class ProductsListView(LoginRequiredMixin, ListView):
     model = Product
 
     def get_queryset(self):
@@ -43,7 +45,7 @@ class ProductsListView(ListView):
         return queryset
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
 
     def get_context_data(self, **kwargs):
@@ -61,9 +63,11 @@ class ProductDetailView(DetailView):
         return context_data
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
+    permission_required = 'catalog.add_product'
+    permission_denied_message = 'Доступ запрещен.'
 
     def form_valid(self, form):
         if form.is_valid():
@@ -76,9 +80,11 @@ class ProductCreateView(CreateView):
         return reverse('catalog:products', args=[self.object.category.pk])
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
+    permission_required = 'catalog.change_product'
+    permission_denied_message = 'Доступ запрещен.'
 
     def get_success_url(self):
         return reverse('catalog:products', args=[self.object.category.pk])
@@ -101,3 +107,10 @@ class ProductUpdateView(UpdateView):
             formset.instance = self.object
             formset.save()
         return super().form_valid(form)
+
+    def get_object(self, *args, **kwargs):
+        product = super().get_object(*args, **kwargs)
+        if product.user_create != self.request.user:
+            # raise Http404()
+            return reverse('catalog:products')
+        return product
