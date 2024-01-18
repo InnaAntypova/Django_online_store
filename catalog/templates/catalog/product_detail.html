@@ -24,7 +24,8 @@
                             {% endif %}
                     </ul>
                     <a href="#" type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</a>
-                    {% if user.is_authenticated %}
+{#                    {% if perms.catalog.change_product %}#}
+                        {% if request.user == object.user_create %}
                         <a href="{% url 'catalog:update_product' object.pk %} " type="button"
                            class="w-100 btn btn-lg btn-outline-danger">Изменить</a>
                     {% endif %}

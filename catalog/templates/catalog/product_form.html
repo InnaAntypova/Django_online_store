@@ -112,6 +112,7 @@
     </header>
 
     <main>
+    {% if perms.catalog.add_product or perms.catalog.change_product %}
         <div class="col-12">
             <form class="row" method="post" enctype="multipart/form-data">
                 <div class="col-6">
@@ -149,6 +150,7 @@
             {% endif%}
             </form>
         </div>
+    {% endif %}
     </main>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">

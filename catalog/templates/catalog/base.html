@@ -106,10 +106,12 @@
                 <a class="py-2 link-body-emphasis text-decoration-none" href="{% url 'blog:article_list' %}">Наш
                     блог</a>
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"></a>
-                {% if user.is_authenticated %}
+                {% if perms.catalog.add_product or perms.catalog.change_product %}
                     <a class="me-3 py-2 link-body-emphasis text-decoration-none"
                        href="{% url 'catalog:save_product' %}">Личный кабинет</a>
-                     <a class="me-3 py-2 link-body-emphasis text-decoration-none"
+                {% endif %}
+                {% if user.is_authenticated %}
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none"
                        href="{% url 'users:user_profile' %}">Профиль</a>
                     <a class="me-3 py-2 link-body-emphasis text-decoration-none"
                        href="{% url 'users:logout' %}">Выход</a>
