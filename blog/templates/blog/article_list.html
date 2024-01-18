@@ -3,7 +3,9 @@
 
 {% block content %}
     <div class="d-grid gap-2 d-md-flex mb-4 justify-content-md-end">
-    <a href="{% url 'blog:create_article' %}" class="btn btn-primary ">Создать статью</a>
+        {% if perms.blog.add_article %}
+            <a href="{% url 'blog:create_article' %}" class="btn btn-primary ">Создать статью</a>
+        {% endif %}
     </div>
     <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
         <div class="col-md-6">

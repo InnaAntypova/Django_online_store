@@ -15,10 +15,14 @@
                         <p class="card-text">{{ object.body }}</p>
                     </div>
                     <div class="col mb-3 md-3">
-                        <a href="{% url 'blog:article_update' object.pk %}"
-                           class="btn btn-outline-info">Редактировать</a>
-                        <a href="{% url 'blog:article_delete' object.pk %}"
-                           class="btn btn-outline-danger">Удалить</a>
+                        {% if perms.blog.change_article %}
+                            <a href="{% url 'blog:article_update' object.pk %}"
+                               class="btn btn-outline-info">Редактировать</a>
+                        {% endif %}
+                        {% if perms.blog.delete_article %}
+                            <a href="{% url 'blog:article_delete' object.pk %}"
+                               class="btn btn-outline-danger">Удалить</a>
+                        {% endif %}
                     </div>
                 </div>
                 <h6>Кол-во просмотров: {{ object.count_views }}</h6>

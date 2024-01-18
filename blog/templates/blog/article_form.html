@@ -102,36 +102,37 @@
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
             <p class="fs-5 text-body-secondary">Форма для {% if object %}
                 редактирования
-                {% else %}
+            {% else %}
                 добавления
-                {% endif %} статьи.</p>
+            {% endif %} статьи.</p>
         </div>
     </header>
 
     <main>
-        <form method="post">
-            {% csrf_token %}
-            <div class="row-cols-2 align-items-center">
-                <div class="container-fluid ">
-                    {{ form.as_p }}
-{#                    <div class="mb-3">#}
-{#                        <label for="title" class="form-label">Заголовок</label>#}
-{#                        <input type="text" name="title" class="form-control" id="title" required/>#}
-{#                    </div>#}
-{#                    <div class="mb-3">#}
-{#                        <label for="image" class="form-label">Изображение(превью)</label>#}
-{#                        <input type="file" name="image" accept="image/*" id="image" />#}
-{#                    </div>#}
-{#                    <div class="mb-3">#}
-{#                        <label for="body">Содержимое</label>#}
-{#                        <textarea type="text" name="body" class="form-control" id="body"#}
-{#                                  required></textarea>#}
-{#                    </div>#}
-                    <button type="submit" class="btn btn-primary">Сохранить</button>
+        {% if perms.blog.add_article or perms.blog.change_article %}
+            <form method="post">
+                {% csrf_token %}
+                <div class="row-cols-2 align-items-center">
+                    <div class="container-fluid ">
+                        {{ form.as_p }}
+                        {#                    <div class="mb-3">#}
+                        {#                        <label for="title" class="form-label">Заголовок</label>#}
+                        {#                        <input type="text" name="title" class="form-control" id="title" required/>#}
+                        {#                    </div>#}
+                        {#                    <div class="mb-3">#}
+                        {#                        <label for="image" class="form-label">Изображение(превью)</label>#}
+                        {#                        <input type="file" name="image" accept="image/*" id="image" />#}
+                        {#                    </div>#}
+                        {#                    <div class="mb-3">#}
+                        {#                        <label for="body">Содержимое</label>#}
+                        {#                        <textarea type="text" name="body" class="form-control" id="body"#}
+                        {#                                  required></textarea>#}
+                        {#                    </div>#}
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-
+            </form>
+        {% endif %}
     </main>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
