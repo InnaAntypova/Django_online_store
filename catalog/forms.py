@@ -19,7 +19,7 @@ class CrispyFormMixin(forms.Form):
 
 
 class ProductForm(CrispyFormMixin, forms.ModelForm):
-
+    """ Форма для Product """
     class Meta:
         model = Product
         fields = ('name', 'category', 'image', 'price_item', 'description')
@@ -40,7 +40,14 @@ class ProductForm(CrispyFormMixin, forms.ModelForm):
 
 
 class VersionForm(CrispyFormMixin, forms.ModelForm):
-
+    """ Форма для Version """
     class Meta:
         model = Version
         fields = '__all__'
+
+
+class ModeratorProductForm(CrispyFormMixin, forms.ModelForm):
+    """ Форма для модератора Product """
+    class Meta:
+        model = Product
+        fields = ('name', 'category', 'image', 'price_item', 'description', 'is_published')

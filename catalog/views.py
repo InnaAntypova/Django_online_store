@@ -6,7 +6,7 @@ from django.http import Http404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
 
-from catalog.forms import ProductForm, VersionForm
+from catalog.forms import ProductForm, VersionForm, ModeratorProductForm
 from catalog.models import Category, Product, Version
 
 
@@ -65,7 +65,7 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
 
 class ProductCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Product
-    form_class = ProductForm
+    # form_class = ProductForm
     permission_required = 'catalog.add_product'
     permission_denied_message = 'Доступ запрещен.'
 
@@ -78,6 +78,11 @@ class ProductCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
 
     def get_success_url(self):
         return reverse('catalog:products', args=[self.object.category.pk])
+
+    def get_form_class(self):
+        if self.request.user.is_staff:
+            return ModeratorProductForm
+        return ProductForm
 
 
 class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
