@@ -48,6 +48,8 @@ class ConfirmUserView(View):
         try:
             user = User.objects.get(field_uuid=uuid)
             user.is_active = True
+            user.has_perm('catalog.view_product')
+            user.has_perm('blog.view_product')
             user.save()
             return render(request, 'users/confirm_register.html')
         except User.DoesNotExist:
