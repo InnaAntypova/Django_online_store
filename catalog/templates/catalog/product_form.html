@@ -107,12 +107,18 @@
             </nav>
         </div>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <p class="fs-5 text-body-secondary">Форма для добавления товара в базу данных.</p>
+            <p class="fs-5 text-body-secondary">Форма для
+                {% if object %}
+                    редактирования товара в базе данных.
+                {% else %}
+                    добавления товара в базу данных.
+                {% endif %}
+            </p>
         </div>
     </header>
 
     <main>
-    {% if perms.catalog.add_product or perms.catalog.change_product %}
+        {% if perms.catalog.add_product or perms.catalog.change_product or request.user.is_superuser or request.user.is_staff %}
         <div class="col-12">
             <form class="row" method="post" enctype="multipart/form-data">
                 <div class="col-6">
@@ -132,25 +138,25 @@
                         </div>
                     </div>
                 </div>
-            {% if object %}
-                <div class="col-6">
-                    <div class="card">
-                        <h5 class="card-header">Версия</h5>
-                        <div class="card-body">
-                            {{ formset.management_form }}
-                            {% for form in formset.forms %}
-                                {{ form | crispy }}
-                                {% if not forloop.last %}
-                                <hr>
-                                {% endif %}
-                            {% endfor %}
+                {% if object %}
+                    <div class="col-6">
+                        <div class="card">
+                            <h5 class="card-header">Версия</h5>
+                            <div class="card-body">
+                                {{ formset.management_form }}
+                                {% for form in formset.forms %}
+                                    {{ form | crispy }}
+                                    {% if not forloop.last %}
+                                        <hr>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endif%}
+                {% endif %}
             </form>
         </div>
-    {% endif %}
+        {% endif %}
     </main>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">

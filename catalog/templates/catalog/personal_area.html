@@ -1,0 +1,22 @@
+{% extends 'catalog/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+    <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                {% if perms.catalog.add_product or perms.catalog.change_product or request.user.is_superuser %}
+                <a href="{% url 'catalog:save_product'  %} " type="button"
+                   class="w-100 btn btn-lg btn-outline-secondary">Создать товар</a>
+                <a href="{% url 'catalog:moderator_products_list'  %} " type="button"
+                   class="w-100 btn btn-lg btn-outline-secondary">Список всех товаров</a>
+                {% endif %}
+            {% if perms.blog.add_article or perms.blog.change_article or request.user.is_superuser %}
+                <a href="{% url 'blog:create_article'  %} " type="button" class="w-100 btn btn-lg btn-outline-secondary">Создать статью</a>
+{#                <a href="{% url ''  %} " type="button" class="w-100 btn btn-lg btn-outline-secondary">Список статей</a>#}
+            {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
