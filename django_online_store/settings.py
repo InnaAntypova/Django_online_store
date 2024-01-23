@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware'
 ]
 
 ROOT_URLCONF = 'django_online_store.urls'
@@ -169,8 +171,8 @@ LOGOUT_REDIRECT_URL = '/home'
 
 LOGIN_URL = '/users/'
 
-#Redis
-CASH_ALLOWED = os.getenv('CASH_ALLOWED') == True
+# Redis
+CASH_ALLOWED = os.getenv('CASH_ALLOWED') is True
 
 CACHES = {
     'default': {
