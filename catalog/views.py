@@ -8,6 +8,8 @@ from django.views.generic import TemplateView, ListView, DetailView, CreateView,
 
 from catalog.forms import ProductForm, VersionForm, ModeratorProductForm
 from catalog.models import Category, Product, Version
+from catalog.services import get_category_cache
+from django_online_store import settings
 
 
 class IndexView(TemplateView):
@@ -35,6 +37,15 @@ class ContactsView(TemplateView):
 
 class CategoryListView(ListView):
     model = Category
+
+    def get_context_data(self, *args, **kwargs):
+        context_data = super().get_context_data(*args, **kwargs)
+        if settings.CASH_ALLOWED:
+            context_data['category_list'] = get_category_cache()
+            # print(context_data)
+        else:
+            context_data['category_list'] = Category.objects.all()
+        return context_data
 
 
 class ProductsListView(LoginRequiredMixin, ListView):
